@@ -1,0 +1,2344 @@
+[
+    {
+        "id": "e724a3ea782c7060",
+        "type": "tab",
+        "label": "Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a5d2e1eee32d3004",
+        "type": "subflow",
+        "name": "Subflow 3",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "5947bda1cd0ee5b9"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 780,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "feeeaf579e2ccbdf",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "1f3e3e474ec2d0c6",
+        "type": "subflow",
+        "name": "Subflow 4",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "90f6cb44b806bd33"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 600,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "436e103b4904e005",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d72ec01a6146060e",
+        "type": "subflow",
+        "name": "Subflow 5",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "b7b373d7e260f54b"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 820,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "be962b335a3e3f5f",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "286b640d08d5ecfd",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "InfluxCloud",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "https://us-east-1-1.aws.cloud2.influxdata.com/",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "03706e5d7103ed10",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#ff0000",
+                "baseFont": "Courier,monospace",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#af1212",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#af1212",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#af1212",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#e92525",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#af1212",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ec92d4397a66e866",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b56a2a6a936776bc",
+        "type": "ui_group",
+        "name": "grup2",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "63ceb13767a50d3d",
+        "type": "ui_group",
+        "name": "grp3",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "60bf72646d28d4f9",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "d6cb7dc861ac9755",
+        "type": "ui_group",
+        "name": "Group 5",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "795c7be44d25f8af",
+        "type": "ui_group",
+        "name": "Group 6",
+        "tab": "",
+        "order": 6,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "999d1a824f79fcb2",
+        "type": "ui_group",
+        "name": "Group 7",
+        "tab": "",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d54f86f208af6d4",
+        "type": "ui_group",
+        "name": "Group 8",
+        "tab": "",
+        "order": 8,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "fd8f8d46a327866b",
+        "type": "ui_group",
+        "name": "Group 9",
+        "tab": "",
+        "order": 9,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "96637d26377c0f1a",
+        "type": "ui_group",
+        "name": "Group 10",
+        "tab": "",
+        "order": 10,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "821cd7fb9cbf8316",
+        "type": "ui_group",
+        "name": "Group 11",
+        "tab": "",
+        "order": 11,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "1e8ceac31cfcf402",
+        "type": "ui_group",
+        "name": "Group 12",
+        "tab": "",
+        "order": 12,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "0638444a1da516fa",
+        "type": "ui_group",
+        "name": "Group 13",
+        "tab": "",
+        "order": 13,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "328c80d4b6f62aa6",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "407a01e4.6b637",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "Sub",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "64fb488c2a196cc3",
+        "type": "ui_group",
+        "name": "Opciones para la base de datos",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "edd3004a.11da88",
+        "type": "mqtt-broker",
+        "name": "HiveMQ",
+        "broker": "35.157.158.119",
+        "port": "1883",
+        "clientid": "hugo-SIC-453",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "580a60a5.94dc28",
+        "type": "ui_group",
+        "name": "Valores actuales",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e7a1662f.989d8",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 12
+    },
+    {
+        "id": "eef7e693.5d679",
+        "type": "ui_group",
+        "name": "Capture",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false
+    },
+    {
+        "id": "aa3107cbb6f29f72",
+        "type": "mqtt-broker",
+        "name": "LocalHost",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "Sub",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "bbd0b1a1278a4d27",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "db": "Checadores_de_transporte",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "a1e62deb4c9b9a3e",
+        "type": "ui_tab",
+        "name": "Graficas",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "89749fb7.87f01",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "d7901f40.2659d",
+        "order": 2,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "ab397e95.29ebe",
+        "type": "ui_group",
+        "name": "Inputs",
+        "tab": "d7901f40.2659d",
+        "order": 1,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "4e7edda4.417004",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "d7901f40.2659d",
+        "order": 3,
+        "disp": false,
+        "width": "6"
+    },
+    {
+        "id": "d7901f40.2659d",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "36e5433099e4b291",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9d60959d5e8e982e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "03132d18cbee7980",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "9d60959d5e8e982e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e6bce5e5759097c3",
+        "type": "ui_group",
+        "name": "Registros",
+        "tab": "a1e62deb4c9b9a3e",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f03935be.295e48",
+        "type": "ui_tab",
+        "name": "Wemos D1  mini",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d5efd53.311d128",
+        "type": "ui_group",
+        "name": "DS18B20",
+        "tab": "f03935be.295e48",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2fe5c74f.26d7f8",
+        "type": "ui_group",
+        "name": "Led",
+        "tab": "f03935be.295e48",
+        "order": 2,
+        "disp": true,
+        "width": 3,
+        "collapse": false
+    },
+    {
+        "id": "e760775.9a33e88",
+        "type": "ui_group",
+        "name": "Relé",
+        "tab": "f03935be.295e48",
+        "order": 3,
+        "disp": true,
+        "width": 3,
+        "collapse": false
+    },
+    {
+        "id": "ffa028df.e74868",
+        "type": "ui_group",
+        "name": "Pantalla Oled",
+        "tab": "f03935be.295e48",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9c71e624.4c3188",
+        "type": "ui_group",
+        "name": "Matriz Led",
+        "tab": "f03935be.295e48",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "42de9fc6.58a54",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "enriquecrespo.com",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "usetls": true,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "79f81dc4c8193570",
+        "type": "ui_group",
+        "name": "Entradas y salidas",
+        "tab": "a1e62deb4c9b9a3e",
+        "order": 2,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c236b795d91cb009",
+        "type": "ui_group",
+        "name": "Checadores en tiempo real.",
+        "tab": "a1e62deb4c9b9a3e",
+        "order": 3,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0f212436bfe9f04c",
+        "type": "ui_link",
+        "name": "Link 5",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 5
+    },
+    {
+        "id": "76ce255f6488bed8",
+        "type": "ui_link",
+        "name": "Link 6",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 6
+    },
+    {
+        "id": "dfdf758f2d0cb798",
+        "type": "ui_group",
+        "name": "Controles",
+        "tab": "a1e62deb4c9b9a3e",
+        "order": 4,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "489c211567c3ef80",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8b67d285e6344e92",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4f1023500a957d59",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6157fbb96d4db1ef",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a69d113b01a4a71b",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f4594400439259e7",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "28ae24012f0ba998",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a794948fd4f4998a",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "589e79c56d86c54f",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4006b3fe7bc5d20b",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a2e3da0ad24dc80a",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "376119a6e7355814",
+        "type": "ui_spacer",
+        "z": "e724a3ea782c7060",
+        "name": "spacer",
+        "group": "c236b795d91cb009",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3303ef2850196cbd",
+        "type": "mysql",
+        "z": "a5d2e1eee32d3004",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "feeeaf579e2ccbdf"
+            ]
+        ]
+    },
+    {
+        "id": "5947bda1cd0ee5b9",
+        "type": "function",
+        "z": "a5d2e1eee32d3004",
+        "name": "",
+        "func": "\nmsg.topic = \"SELECT ENTRADAS, SALIDAS FROM \"+msg.payload.Tables_in_Checadores_de_transporte+\" ORDER BY FECHA DESC LIMIT 2\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "3303ef2850196cbd"
+            ]
+        ]
+    },
+    {
+        "id": "feeeaf579e2ccbdf",
+        "type": "function",
+        "z": "a5d2e1eee32d3004",
+        "name": "",
+        "func": "\nvar m;\n\nm={\n    \"series\":[\"Entradas\",\"Salidas\"],\n    \"data\":[[msg.payload[0].ENTRADAS,msg.payload[1].ENTRADAS],[msg.payload[0].SALIDAS,msg.payload[1].SALIDAS]],\n    \"labels\":[\"Checador actual\", \"Checador anterior\"]\n};\nreturn {payload:[m]};\n\n\n\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "90f6cb44b806bd33",
+        "type": "function",
+        "z": "1f3e3e474ec2d0c6",
+        "name": "",
+        "func": "\nmsg.topic = \"SELECT ENTRADAS FROM \"+msg.payload.Tables_in_Checadores_de_transporte+\" ORDER BY FECHA DESC\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "436e103b4904e005"
+            ]
+        ]
+    },
+    {
+        "id": "436e103b4904e005",
+        "type": "mysql",
+        "z": "1f3e3e474ec2d0c6",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "be962b335a3e3f5f",
+        "type": "function",
+        "z": "d72ec01a6146060e",
+        "name": "",
+        "func": "var chart = [{\n    \"series\":[\"Checador: \"],\n    \"data\": [[\n            {\"x\":Date.parse(msg.payload[0].FECHA),\"y\":msg.payload[0].CHECADOR},\n            {\"x\":Date.parse(msg.payload[1].FECHA),\"y\":msg.payload[1].CHECADOR},\n            {\"x\":Date.parse(msg.payload[2].FECHA),\"y\":msg.payload[2].CHECADOR},\n            {\"x\":Date.parse(msg.payload[3].FECHA),\"y\":msg.payload[3].CHECADOR},\n            {\"x\":Date.parse(msg.payload[4].FECHA),\"y\":msg.payload[4].CHECADOR},\n            {\"x\":Date.parse(msg.payload[5].FECHA),\"y\":msg.payload[5].CHECADOR},\n            {\"x\":Date.parse(msg.payload[6].FECHA),\"y\":msg.payload[6].CHECADOR},\n            {\"x\":Date.parse(msg.payload[7].FECHA),\"y\":msg.payload[7].CHECADOR},\n            {\"x\":Date.parse(msg.payload[8].FECHA),\"y\":msg.payload[8].CHECADOR},\n            {\"x\":Date.parse(msg.payload[9].FECHA),\"y\":msg.payload[9].CHECADOR}\n            ]\n            ],\n    \"labels\":[\"\"]\n}];\nmsg.payload = chart;\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "70c3a3583f6733d2",
+        "type": "mysql",
+        "z": "d72ec01a6146060e",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 440,
+        "y": 80,
+        "wires": [
+            [
+                "be962b335a3e3f5f"
+            ]
+        ]
+    },
+    {
+        "id": "b7b373d7e260f54b",
+        "type": "function",
+        "z": "d72ec01a6146060e",
+        "name": "",
+        "func": "\nmsg.topic = \"SELECT RUTA,CHECADOR,FECHA FROM \"+msg.tabla.Tables_in_Checadores_de_transporte+\" ORDER BY FECHA DESC\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "70c3a3583f6733d2"
+            ]
+        ]
+    },
+    {
+        "id": "ab027d1be6d066a5",
+        "type": "mysql",
+        "z": "e724a3ea782c7060",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 700,
+        "y": 180,
+        "wires": [
+            [
+                "6ab6833a0738662c"
+            ]
+        ]
+    },
+    {
+        "id": "ad15cb562c2b6bf1",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "\nmsg.topic = \"SELECT RUTA,CHECADOR,FECHA FROM \"+msg.payload+\" ORDER BY FECHA DESC\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "ab027d1be6d066a5"
+            ]
+        ]
+    },
+    {
+        "id": "b7722317f44035ff",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "e6bce5e5759097c3",
+        "order": 1,
+        "width": 15,
+        "height": 5,
+        "label": "Capturar tiempo",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "Coloque una placa valida",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1160,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8f286ac8ea58d43",
+        "type": "loop",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "kind": "fcnt",
+        "count": "3",
+        "initial": "0",
+        "step": "1",
+        "condition": "",
+        "conditionType": "js",
+        "when": "before",
+        "enumeration": "enum",
+        "enumerationType": "msg",
+        "limit": "",
+        "loopPayload": "loop-orig",
+        "finalPayload": "final-orig",
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [],
+            [
+                "7d8803fbc003b8e0"
+            ]
+        ]
+    },
+    {
+        "id": "908d0414ae3e0599",
+        "type": "inject",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "896a6751dab886d9"
+            ]
+        ]
+    },
+    {
+        "id": "7d8803fbc003b8e0",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "\nmsg.payload = msg.payload[msg.loop.value];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 580,
+        "wires": [
+            [
+                "ba10a204a4244247",
+                "3017612ce92153f2"
+            ]
+        ]
+    },
+    {
+        "id": "896a6751dab886d9",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "msg.topic = \"SHOW TABLES\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 340,
+        "wires": [
+            [
+                "5283c62cf0b721b6"
+            ]
+        ]
+    },
+    {
+        "id": "5283c62cf0b721b6",
+        "type": "mysql",
+        "z": "e724a3ea782c7060",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "e8f286ac8ea58d43"
+            ]
+        ]
+    },
+    {
+        "id": "6ab6833a0738662c",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "var chart = [{\n    \"series\":[\"Checador\"],\n    \"data\": [[\n            {\"x\":Date.parse(msg.payload[0].FECHA),\"y\":msg.payload[0].CHECADOR},\n            {\"x\":Date.parse(msg.payload[1].FECHA),\"y\":msg.payload[1].CHECADOR},\n            {\"x\":Date.parse(msg.payload[2].FECHA),\"y\":msg.payload[2].CHECADOR},\n            {\"x\":Date.parse(msg.payload[3].FECHA),\"y\":msg.payload[3].CHECADOR},\n            {\"x\":Date.parse(msg.payload[4].FECHA),\"y\":msg.payload[4].CHECADOR},\n            {\"x\":Date.parse(msg.payload[5].FECHA),\"y\":msg.payload[5].CHECADOR},\n            {\"x\":Date.parse(msg.payload[6].FECHA),\"y\":msg.payload[6].CHECADOR},\n            {\"x\":Date.parse(msg.payload[7].FECHA),\"y\":msg.payload[7].CHECADOR},\n            {\"x\":Date.parse(msg.payload[8].FECHA),\"y\":msg.payload[8].CHECADOR},\n            {\"x\":Date.parse(msg.payload[9].FECHA),\"y\":msg.payload[9].CHECADOR}\n            ]\n            ],\n    \"labels\":[\"\"]\n}];\nmsg.payload = chart;\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 120,
+        "wires": [
+            [
+                "b7722317f44035ff"
+            ]
+        ]
+    },
+    {
+        "id": "ba10a204a4244247",
+        "type": "delay",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "e8f286ac8ea58d43"
+            ]
+        ]
+    },
+    {
+        "id": "aef2bad98d08ce49",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "79f81dc4c8193570",
+        "order": 1,
+        "width": 9,
+        "height": 5,
+        "label": "AAA0001",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "30",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#4646c8",
+            "#c84141",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "026fc96d8f23465b",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "var sum = 0;\n\nfor (let i = 0; i < msg.payload.length; i++) {\n    sum += msg.payload[i].ENTRADAS;\n}\nmsg.lerma = sum;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 860,
+        "wires": [
+            [
+                "e2968bceeb9dda5e"
+            ]
+        ]
+    },
+    {
+        "id": "3017612ce92153f2",
+        "type": "switch",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "property": "payload.Tables_in_Checadores_de_transporte",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AAA0001",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AAA0002",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AAA0003",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 610,
+        "y": 580,
+        "wires": [
+            [
+                "87dd7a026282122b"
+            ],
+            [
+                "1437bf62674b4ee9"
+            ],
+            [
+                "3302259888af44ef"
+            ]
+        ],
+        "outputLabels": [
+            "hola",
+            "",
+            ""
+        ]
+    },
+    {
+        "id": "c12383bb620a2da2",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "79f81dc4c8193570",
+        "order": 2,
+        "width": 9,
+        "height": 5,
+        "label": "AAA0002",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "30",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#4646c8",
+            "#c84141",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c17c2d3e486eeb7",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "79f81dc4c8193570",
+        "order": 3,
+        "width": 9,
+        "height": 5,
+        "label": "AAA0003",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "30",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#4646c8",
+            "#c84141",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1040,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87dd7a026282122b",
+        "type": "subflow:a5d2e1eee32d3004",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "x": 840,
+        "y": 540,
+        "wires": [
+            [
+                "aef2bad98d08ce49"
+            ]
+        ]
+    },
+    {
+        "id": "1437bf62674b4ee9",
+        "type": "subflow:a5d2e1eee32d3004",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "x": 840,
+        "y": 580,
+        "wires": [
+            [
+                "c12383bb620a2da2"
+            ]
+        ]
+    },
+    {
+        "id": "3302259888af44ef",
+        "type": "subflow:a5d2e1eee32d3004",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "x": 840,
+        "y": 620,
+        "wires": [
+            [
+                "8c17c2d3e486eeb7"
+            ]
+        ]
+    },
+    {
+        "id": "d4728a4ea893bdc5",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "e6bce5e5759097c3",
+        "order": 2,
+        "width": 12,
+        "height": 6,
+        "label": "Pasaje",
+        "chartType": "bar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#8f41e1",
+            "#ff881a",
+            "#24d648",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 910,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cc9b7848f34a17da",
+        "type": "inject",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "props": [
+            {
+                "p": "lerma",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "cuaji_1",
+                "v": "",
+                "vt": "str"
+            },
+            {
+                "p": "cuaji_2",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 740,
+        "wires": [
+            [
+                "c6c96e7b40025dd8"
+            ]
+        ]
+    },
+    {
+        "id": "85ac4b3d3405c854",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "\nmsg.payload = msg.payload[msg.loop.value];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 980,
+        "wires": [
+            [
+                "9df9947e37f9449e",
+                "421138fc4576b833"
+            ]
+        ]
+    },
+    {
+        "id": "c6c96e7b40025dd8",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "msg.topic = \"SHOW TABLES\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "f942d6ffef98f858"
+            ]
+        ]
+    },
+    {
+        "id": "f942d6ffef98f858",
+        "type": "mysql",
+        "z": "e724a3ea782c7060",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 620,
+        "y": 740,
+        "wires": [
+            [
+                "0f88ab867ba0dd78"
+            ]
+        ]
+    },
+    {
+        "id": "b07c1f24afc7654e",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "var m = {};\nm.labels = [\"Lerma\", \"Cuaji-1\", \"Cuaji-2\"];\nm.data = [[msg.lerma, msg.cuaji_1, msg.cuaji_2]];\nm.series = [\"Pasajeros\"];\nreturn {payload:[m],topic:msg.topic};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 1060,
+        "wires": [
+            [
+                "d4728a4ea893bdc5"
+            ]
+        ]
+    },
+    {
+        "id": "9df9947e37f9449e",
+        "type": "switch",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "property": "payload.Tables_in_Checadores_de_transporte",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AAA0001",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AAA0002",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AAA0003",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 610,
+        "y": 1000,
+        "wires": [
+            [
+                "1986fbe06a8ce1c4"
+            ],
+            [
+                "bb77c4ba3a4e3e93"
+            ],
+            [
+                "b47a9d5ee6b42a1f"
+            ]
+        ]
+    },
+    {
+        "id": "427c78138af6a4f1",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "var sum = 0;\n\nfor (let i = 0; i < msg.payload.length; i++) {\n    sum += msg.payload[i].ENTRADAS;\n}\nmsg.cuaji_2 = sum;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 940,
+        "wires": [
+            [
+                "f9e6969157b1ec24"
+            ]
+        ]
+    },
+    {
+        "id": "3fba8ed30f714019",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "var sum = 0;\n\nfor (let i = 0; i < msg.payload.length; i++) {\n    sum += msg.payload[i].ENTRADAS;\n}\nmsg.cuaji_1 = sum;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 960,
+        "y": 900,
+        "wires": [
+            [
+                "f496d1794e3b2f0b"
+            ]
+        ]
+    },
+    {
+        "id": "1986fbe06a8ce1c4",
+        "type": "subflow:1f3e3e474ec2d0c6",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "x": 820,
+        "y": 860,
+        "wires": [
+            [
+                "026fc96d8f23465b"
+            ]
+        ]
+    },
+    {
+        "id": "bb77c4ba3a4e3e93",
+        "type": "subflow:1f3e3e474ec2d0c6",
+        "z": "e724a3ea782c7060",
+        "x": 820,
+        "y": 900,
+        "wires": [
+            [
+                "3fba8ed30f714019"
+            ]
+        ]
+    },
+    {
+        "id": "b47a9d5ee6b42a1f",
+        "type": "subflow:1f3e3e474ec2d0c6",
+        "z": "e724a3ea782c7060",
+        "x": 820,
+        "y": 940,
+        "wires": [
+            [
+                "427c78138af6a4f1"
+            ]
+        ]
+    },
+    {
+        "id": "e2968bceeb9dda5e",
+        "type": "change",
+        "z": "e724a3ea782c7060",
+        "name": "Variable del flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "lerma",
+                "pt": "flow",
+                "to": "lerma",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f9e6969157b1ec24",
+        "type": "change",
+        "z": "e724a3ea782c7060",
+        "name": "Variable del flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cuaji_2",
+                "pt": "flow",
+                "to": "cuaji_2",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f496d1794e3b2f0b",
+        "type": "change",
+        "z": "e724a3ea782c7060",
+        "name": "Variable del flow",
+        "rules": [
+            {
+                "t": "set",
+                "p": "cuaji_1",
+                "pt": "flow",
+                "to": "cuaji_1",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f88ab867ba0dd78",
+        "type": "loop",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "kind": "fcnt",
+        "count": "3",
+        "initial": "0",
+        "step": "1",
+        "condition": "",
+        "conditionType": "js",
+        "when": "before",
+        "enumeration": "enum",
+        "enumerationType": "msg",
+        "limit": "",
+        "loopPayload": "loop-orig",
+        "finalPayload": "final-orig",
+        "x": 510,
+        "y": 840,
+        "wires": [
+            [],
+            [
+                "85ac4b3d3405c854"
+            ]
+        ]
+    },
+    {
+        "id": "421138fc4576b833",
+        "type": "delay",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 310,
+        "y": 840,
+        "wires": [
+            [
+                "0f88ab867ba0dd78"
+            ]
+        ]
+    },
+    {
+        "id": "138f56ac7ae341c4",
+        "type": "inject",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "props": [
+            {
+                "p": "lerma",
+                "v": "lerma",
+                "vt": "flow"
+            },
+            {
+                "p": "cuaji_1",
+                "v": "cuaji_1",
+                "vt": "flow"
+            },
+            {
+                "p": "cuaji_2",
+                "v": "cuaji_2",
+                "vt": "flow"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 570,
+        "y": 1060,
+        "wires": [
+            [
+                "b07c1f24afc7654e"
+            ]
+        ]
+    },
+    {
+        "id": "1d129f20121a370d",
+        "type": "ui_button",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "dfdf758f2d0cb798",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": false,
+        "label": "Limpiar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "",
+        "topicType": "str",
+        "x": 1180,
+        "y": 300,
+        "wires": [
+            [
+                "aef2bad98d08ce49",
+                "c12383bb620a2da2",
+                "8c17c2d3e486eeb7",
+                "b7722317f44035ff",
+                "d4728a4ea893bdc5",
+                "3274178b9c03b1d0",
+                "9338656ae6052d48",
+                "ad9df498bc827545"
+            ]
+        ]
+    },
+    {
+        "id": "3274178b9c03b1d0",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "c236b795d91cb009",
+        "order": 1,
+        "width": 8,
+        "height": 6,
+        "label": "Lerma",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "Faltan datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#8f41e1",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 1420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "21283899ed961980",
+        "type": "inject",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "props": [
+            {
+                "p": "tabla",
+                "v": "",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 1220,
+        "wires": [
+            [
+                "49aeeb1a63e8d94a"
+            ]
+        ]
+    },
+    {
+        "id": "9338656ae6052d48",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "c236b795d91cb009",
+        "order": 3,
+        "width": 9,
+        "height": 6,
+        "label": "Cuajimalpa 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "Faltan datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff881a",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad9df498bc827545",
+        "type": "ui_chart",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "c236b795d91cb009",
+        "order": 5,
+        "width": 8,
+        "height": 6,
+        "label": "Cuajimalpa 2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "Faltan datos",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#24d648",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f5c99290a9b91c9",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "\nmsg.tabla = msg.payload[msg.loop.value];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 1460,
+        "wires": [
+            [
+                "c814c909b3e30fa9",
+                "c3d05f49e24ada72"
+            ]
+        ]
+    },
+    {
+        "id": "49aeeb1a63e8d94a",
+        "type": "function",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "func": "msg.topic = \"SHOW TABLES\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1220,
+        "wires": [
+            [
+                "ed1ae34397583a7d"
+            ]
+        ]
+    },
+    {
+        "id": "ed1ae34397583a7d",
+        "type": "mysql",
+        "z": "e724a3ea782c7060",
+        "mydb": "bbd0b1a1278a4d27",
+        "name": "",
+        "x": 600,
+        "y": 1220,
+        "wires": [
+            [
+                "779a1155481bc579"
+            ]
+        ]
+    },
+    {
+        "id": "c814c909b3e30fa9",
+        "type": "switch",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "property": "tabla.Tables_in_Checadores_de_transporte",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "AAA0001",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AAA0002",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "AAA0003",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 590,
+        "y": 1460,
+        "wires": [
+            [
+                "95c30423b6fa00de"
+            ],
+            [
+                "d42e050b8870e8cc"
+            ],
+            [
+                "90107041c412045a"
+            ]
+        ]
+    },
+    {
+        "id": "779a1155481bc579",
+        "type": "loop",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "kind": "fcnt",
+        "count": "3",
+        "initial": "0",
+        "step": "1",
+        "condition": "",
+        "conditionType": "js",
+        "when": "before",
+        "enumeration": "enum",
+        "enumerationType": "msg",
+        "limit": "",
+        "loopPayload": "loop-orig",
+        "finalPayload": "final-orig",
+        "x": 490,
+        "y": 1320,
+        "wires": [
+            [],
+            [
+                "7f5c99290a9b91c9"
+            ]
+        ]
+    },
+    {
+        "id": "c3d05f49e24ada72",
+        "type": "delay",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "200",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 290,
+        "y": 1320,
+        "wires": [
+            [
+                "779a1155481bc579"
+            ]
+        ]
+    },
+    {
+        "id": "95c30423b6fa00de",
+        "type": "subflow:d72ec01a6146060e",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "x": 800,
+        "y": 1420,
+        "wires": [
+            [
+                "3274178b9c03b1d0"
+            ]
+        ]
+    },
+    {
+        "id": "d42e050b8870e8cc",
+        "type": "subflow:d72ec01a6146060e",
+        "z": "e724a3ea782c7060",
+        "x": 800,
+        "y": 1460,
+        "wires": [
+            [
+                "9338656ae6052d48"
+            ]
+        ]
+    },
+    {
+        "id": "90107041c412045a",
+        "type": "subflow:d72ec01a6146060e",
+        "z": "e724a3ea782c7060",
+        "x": 800,
+        "y": 1500,
+        "wires": [
+            [
+                "ad9df498bc827545"
+            ]
+        ]
+    },
+    {
+        "id": "1e730874fcb24fa7",
+        "type": "ui_button",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "e6bce5e5759097c3",
+        "order": 3,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "AAA0001",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "AAA0001",
+        "payloadType": "str",
+        "topic": "Lerma",
+        "topicType": "str",
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "ad15cb562c2b6bf1"
+            ]
+        ]
+    },
+    {
+        "id": "a3e267da4e9b9101",
+        "type": "ui_button",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "e6bce5e5759097c3",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "AAA0003",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "AAA0003",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "ad15cb562c2b6bf1"
+            ]
+        ]
+    },
+    {
+        "id": "f7de2302b5b9d5c5",
+        "type": "ui_button",
+        "z": "e724a3ea782c7060",
+        "name": "",
+        "group": "e6bce5e5759097c3",
+        "order": 4,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "AAA0002",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "AAA0002",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            [
+                "ad15cb562c2b6bf1"
+            ]
+        ]
+    },
+    {
+        "id": "95de72adf46390a0",
+        "type": "comment",
+        "z": "e724a3ea782c7060",
+        "name": "Entradas y salidas",
+        "info": "",
+        "x": 230,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "35b51d32b96312a9",
+        "type": "comment",
+        "z": "e724a3ea782c7060",
+        "name": "Pasaje",
+        "info": "",
+        "x": 190,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "78cd0426558c96be",
+        "type": "comment",
+        "z": "e724a3ea782c7060",
+        "name": "Checadores en tiempo real",
+        "info": "",
+        "x": 250,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "a3087f5aea16b740",
+        "type": "comment",
+        "z": "e724a3ea782c7060",
+        "name": "Registros",
+        "info": "",
+        "x": 200,
+        "y": 80,
+        "wires": []
+    }
+]

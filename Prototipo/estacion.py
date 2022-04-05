@@ -74,7 +74,7 @@ while True:
             # Comprobamos que la informacion no fue ya detactada con la variable aux
             # Los metodos publish.single sirven en caso de que no se cuente con un cluster privado 
             # en ese caso se puede hacer una publicacion simple que consta del topic, el mensaje, y el host,
-            # ademas si se usa un clouster publico se pueden omitir las oneas de codigo de la 10 a la 38 pero este tipo de clousters cambian de host muy recurrentemente por lo que no se recomienda
+            # ademas si se usa un cluster publico se pueden omitir las lineas de codigo de la 10 a la 38 pero este tipo de clusters cambian de host muy recurrentemente por lo que no se recomienda
 
             if data!=aux: 
                 if data == 'camion1':
@@ -97,7 +97,7 @@ while True:
                     mensaje = ('{'+placa+',"checkpoint": {"nombre": "Jacobo Alejandro",'+checador+',"ruta": "Lerma",'+camion+','+entradas+','+salidas+','+fecha+'}}')
                     print(mensaje)	
 
-                    #Notifico al clouster 
+                    #Notifico al cluster 
                     client.publish('checadores', payload=mensaje, qos=0)
                     
                 
@@ -120,7 +120,7 @@ while True:
                     mensaje = ('{'+placa+',"checkpoint": {"nombre": "Erick Huitziuit",'+checador+',"ruta": "Cuajimalpa",'+camion+','+entradas+','+salidas+','+fecha+'}}')
                     print(mensaje)
 
-                    #Notifico al clouster 
+                    #Notifico al cluster 
                     client.publish('checadores', payload=mensaje, qos=0)
                     
                 if data == 'camion3':
@@ -141,7 +141,7 @@ while True:
                     mensaje = ('{'+placa+',"checkpoint": {"nombre": "Alfredo Garcia",'+checador+',"ruta": "Cuajimalpa",'+camion+','+entradas+','+salidas+','+fecha+'}}')
                     print(mensaje)
 
-                    #Notifico al clouster 
+                    #Notifico al cluster 
                     client.publish('checadores', payload=mensaje, qos=0)
                 
                 aux=data
