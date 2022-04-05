@@ -57,7 +57,7 @@ def on_message(client, userdata, msg):
             # si existe se agregan los datos a la tabla
             mensaje.insertar_datos()
         else:
-            # si no existe primero la cre y despues agrega los datos
+            # si no existe primero la crea y despues agrega los datos
             mensaje.agregar_tabla()
             mensaje.insertar_datos()
 

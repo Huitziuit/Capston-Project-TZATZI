@@ -1,5 +1,5 @@
 '''
-json del mensaje:
+Ejemplo json del mensaje:
 
 {
 	"placa": "34353g",
