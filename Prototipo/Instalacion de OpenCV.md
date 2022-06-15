@@ -22,4 +22,7 @@ pip3 install opencv-contrib-python==4.1.0.25
 sudo modprobe bcm2835-v4l2 
 ```
 ---
-Sin embargo, aún falta habilitar la interfaz de la cámara en las preferencias de configuración de raspberry, ya que por defecto está deshabilitada Para habilitar y comprobar que la la cámara en la raspberry funciona puedes ver el siguiente[tutorial](https://www.youtube.com/watch?v=tHjwx2AQHxU&ab_channel=DataSlayer)
+Sin embargo, aún falta habilitar la interfaz de la cámara en las preferencias de configuración de raspberry, ya que por defecto está deshabilitada Para habilitar y comprobar que la la cámara en la raspberry funciona puedes ver el siguiente [tutorial](https://www.youtube.com/watch?v=tHjwx2AQHxU&ab_channel=DataSlayer)
+
+---
+Listo ya puedes usar el codigo de [estacion.py](https://github.com/Huitziuit/Capston-Project-TZATZI/blob/main/Prototipo/estacion.py) desde la Raspberry usando algun editor de codigo 
